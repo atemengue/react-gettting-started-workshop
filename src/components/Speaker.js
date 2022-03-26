@@ -7,7 +7,7 @@ import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 export default ({ first, last, company, bio, id, twitterHandle }) => {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant='top' src={`/images/speaker-${id}.jpg`} />
+      <Card.Img variant='top' src={`/images/speaker-${id}.png`} />
       <Card.Body>
         <Card.Title>
           {first} {last}

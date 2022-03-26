@@ -2,14 +2,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import Field from './components/Field';
+import { data } from './data';
+import Speakers from './components/Speakers';
 
 const App = () => {
+  const [searchTerm, setSearchTerm] = useState('');
   return (
     <Container>
       <Row>
         <Col>
-          <h1>React WorkShop les premiers Pas</h1>
-          <h2>Welcome Votre premier code React</h2>
+          <Field
+            label='Recherche un nom'
+            value={searchTerm}
+            onChange={setSearchTerm}
+          />
+          <Speakers data={data} term={searchTerm} />
         </Col>
       </Row>
     </Container>

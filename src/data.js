@@ -3,10 +3,10 @@
 export const data = [
   {
     id: '1269',
-    first: 'Arun',
-    last: 'Gupta',
-    company: 'Amazon',
-    bio: 'Arun Gupta is a Principal Open Source Technologist at Amazon Web Services. ',
+    first: 'Foyou ',
+    last: 'Miguel',
+    company: 'Combi driver',
+    bio: 'CEO Combi-driver software consultant and UX designer',
     twitterHandle: 'arungupta',
     favorite: true,
     sessions: [
@@ -260,8 +260,8 @@ export const data = [
   },
   {
     id: '8590',
-    first: 'Chris',
-    last: 'Richardson',
+    first: 'Arnold',
+    last: 'Mpondo',
     company: 'Eventuate, Inc',
     bio: 'Founder of Eventuate, Author of POJOs in Action, creator of the original Cloud Foundry',
     twitterHandle: 'crichardson',
@@ -383,8 +383,8 @@ export const data = [
   },
   {
     id: '5443',
-    first: 'Mark',
-    last: 'Abramson',
+    first: 'Manang',
+    last: 'Boris',
     company: 'Printform Corporation',
     bio: 'Mark is a globally recognized expert on digital printing for industrial and packaging applications.',
     twitterHandle: 'mark__a',
@@ -489,8 +489,8 @@ export const data = [
   },
   {
     id: '1124',
-    first: 'Douglas',
-    last: 'Crockford',
+    first: 'David',
+    last: 'Perghaud',
     company: 'PayPal',
     bio: 'Douglas Crockford discovered the JSON Data Interchange Format. He is also the author of _JavaScript: The Good Parts_. He has been called a guru, but he is actually more of a mahatma.',
     twitterHandle: 'notatweeter',
@@ -752,8 +752,8 @@ export const data = [
   },
   {
     id: '10801',
-    first: 'Troy',
-    last: 'Miles',
+    first: 'Audrey',
+    last: '',
     company: 'Kelley Blue Book',
     bio: 'An award winning developer and author.',
     twitterHandle: 'therockncoder',
@@ -817,9 +817,9 @@ export const data = [
   },
   {
     id: '47343',
-    first: 'Eve',
-    last: 'Porcello',
-    company: 'Moon Highway',
+    first: 'Balla Nga',
+    last: 'Jose',
+    company: 'Helios',
     bio: 'Eve Porcello is an instructor at Moon Highway, egghead.io, and LinkedIn Learning.',
     twitterHandle: 'eveporcello',
     favorite: true,
@@ -837,8 +837,8 @@ export const data = [
   },
   {
     id: '14918',
-    first: 'Claudia',
-    last: 'Galvan',
+    first: 'Tsango',
+    last: 'Antione Junior',
     company: 'Early Stage Innovation',
     bio: 'Claudia is a leading expert on product internationalization',
     twitterHandle: 'cgalvan',
@@ -883,9 +883,9 @@ export const data = [
     ],
   },
   {
-    id: '46769',
-    first: 'Mary',
-    last: 'Grygleski',
+    id: '9393',
+    first: 'Atemengue',
+    last: 'Regis',
     company: 'IBM',
     bio: 'Mary is a passionate developer advocate by day, and a very active tech community organizer by night.',
     twitterHandle: 'mgrygles',
@@ -904,9 +904,9 @@ export const data = [
   },
   {
     id: '8367',
-    first: 'Gayle Laakmann',
-    last: 'McDowell',
-    company: 'CareerCup',
+    first: 'Gweth',
+    last: 'Lionel',
+    company: 'Helios',
     bio: 'Gayle Laakmann McDowell is the founder and CEO of CareerCup.com and the author of three books.',
     twitterHandle: 'gayle',
     favorite: false,
@@ -1034,9 +1034,105 @@ export const data = [
   },
   {
     id: '620',
-    first: 'Ron',
-    last: 'Kleinman',
+    first: 'Nouyep',
+    last: 'Steve',
     company: 'De Anza College',
+    bio: 'Ron teaches Object Oriented Analysis and Design at De Anza College ',
+    twitterHandle: 'notweets',
+    favorite: false,
+    sessions: [
+      {
+        id: '86',
+        title:
+          'The Performance Limitations  of the Java Platform ... and how to avoid them',
+        eventYear: '2008',
+        room: {
+          name: 'Cornell Hall',
+          capacity: 0,
+        },
+      },
+      {
+        id: '6089',
+        title: 'So your mom always wanted you to be an architect',
+        eventYear: '2016',
+        room: {
+          name: 'C209',
+          capacity: 55,
+        },
+      },
+      {
+        id: '7440',
+        title: 'How to Think like a Software Architect',
+        eventYear: '2018',
+        room: {
+          name: 'Fireside A',
+          capacity: 80,
+        },
+      },
+      {
+        id: '7551',
+        title: 'How to "think" (and design) like a Software Architect',
+        eventYear: '2019',
+        room: {
+          name: 'Town Square B',
+          capacity: 130,
+        },
+      },
+    ],
+  },
+  {
+    id: '621',
+    first: ' Bekono',
+    last: 'Liliane',
+    company: 'Amazon',
+    bio: 'Ron teaches Object Oriented Analysis and Design at De Anza College ',
+    twitterHandle: 'notweets',
+    favorite: false,
+    sessions: [
+      {
+        id: '86',
+        title:
+          'The Performance Limitations  of the Java Platform ... and how to avoid them',
+        eventYear: '2008',
+        room: {
+          name: 'Cornell Hall',
+          capacity: 0,
+        },
+      },
+      {
+        id: '6089',
+        title: 'So your mom always wanted you to be an architect',
+        eventYear: '2016',
+        room: {
+          name: 'C209',
+          capacity: 55,
+        },
+      },
+      {
+        id: '7440',
+        title: 'How to Think like a Software Architect',
+        eventYear: '2018',
+        room: {
+          name: 'Fireside A',
+          capacity: 80,
+        },
+      },
+      {
+        id: '7551',
+        title: 'How to "think" (and design) like a Software Architect',
+        eventYear: '2019',
+        room: {
+          name: 'Town Square B',
+          capacity: 130,
+        },
+      },
+    ],
+  },
+  {
+    id: '3450',
+    first: ' Maga',
+    last: 'Antione Ulrich',
+    company: 'Amazon',
     bio: 'Ron teaches Object Oriented Analysis and Design at De Anza College ',
     twitterHandle: 'notweets',
     favorite: false,
