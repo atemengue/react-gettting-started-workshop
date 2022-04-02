@@ -1,19 +1,22 @@
 /** @format */
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import Field from './components/Field';
+import Speakers from './components/Speakers';
+import { data } from './data';
 
 const App = () => {
+  const [term, setTerm] = useState('')
+
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>React WorkShop les premiers Pas</h1>
-          <h2>Welcome Votre premier code React</h2>
-        </Col>
-      </Row>
-    </Container>
-  );
+    <div className="ui container">
+      <div className="row">
+    <Field label="filter un talend" value={term} onChange={setTerm} />
+      </div>
+      <div className="row">
+        <Speakers data={data} term={term} />
+      </div>
+    </div>
+  )
 };
 
 export default App;

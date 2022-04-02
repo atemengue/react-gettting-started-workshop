@@ -6,14 +6,16 @@ import { useBootstrapPrefix } from 'react-bootstrap/esm/ThemeProvider';
 
 export default ({ first, last, company, bio, id, twitterHandle }) => {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant='top' src={`/images/speaker-${id}.jpg`} />
-      <Card.Body>
-        <Card.Title>
+    <div className="ui card" style={{ width: '18rem' }}>
+      <div className="image">
+      <img src={`/images/speaker-${id}.jpg`} />
+      </div>
+      <div className="content">
+        <div className="header">
           {first} {last}
-        </Card.Title>
-        <Card.Text>{bio}</Card.Text>
-        <div className='d-flex justify-content-between'>
+        </div>
+        <div className="description">{bio}</div>
+        <div className='extra content'>
           <div className='company'>
             <h5>Company</h5>
             <h6>{company}</h6>
@@ -23,7 +25,7 @@ export default ({ first, last, company, bio, id, twitterHandle }) => {
             <h6>{twitterHandle}</h6>
           </div>
         </div>
-      </Card.Body>
-    </Card>
+      </div>
+    </div>
   );
 };

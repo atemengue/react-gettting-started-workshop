@@ -1,24 +1,21 @@
 /** @format */
 
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
 import Speaker from './Speaker';
 
 const SpeakerList = ({ speakers }) => {
   const keys = Object.keys(speakers);
 
   return (
-    <Container>
-      <Row>
+    <div className="ui grid">
         {keys.map((key, index) => {
           return (
-            <Col key={index} className='m-3' md='3'>
+            <div key={index} cclassName="four wide column">
               <Speaker {...speakers[key]} key={index} />
-            </Col>
+            </div>
           );
         })}
-      </Row>
-    </Container>
+        </div>
   );
 };
 
