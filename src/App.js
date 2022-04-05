@@ -5,19 +5,21 @@ import Footer from './components/Footer/Footer';
 import Header from './components/header/Header';
 import Speakers from './components/Speakers';
 import { data } from './data';
-
+import routes from './routes';
 function App() {
-  const [term, setTerm] = useState('');
   return (
-    <div className='ui'>
-      <Header />
-      <div className='ui container'>
-        <Field value={term} onChange={setTerm} />
-        <Speakers term={term} data={data} />
-      </div>
-      <div class='ui divider'></div>
-      <Footer />
-    </div>
+    <routes />
+    // const [term, setTerm] = useState('');
+    // return (
+    //   <div className='ui'>
+    //     <Header />
+    //     <div className='ui container'>
+    //       <Field value={term} onChange={setTerm} />
+    //       <Speakers term={term} data={data} />
+    //     </div>
+    //     <div class='ui divider'></div>
+    //     <Footer />
+    //   </div>
   );
 }
 
