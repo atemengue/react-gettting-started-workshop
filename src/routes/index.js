@@ -1,10 +1,10 @@
 /** @format */
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import About from './About';
-import Home from './Home';
-import Message from './Message';
-import SpeakerDetail from './SpeakerDetail';
+import About from '../components/About';
+import Home from '../components/Home';
+import Message from '../components/Message';
+import SpeakerDetail from '../components/SpeakerDetail';
 // import your route components too
 
 const AppRoutes = () => {

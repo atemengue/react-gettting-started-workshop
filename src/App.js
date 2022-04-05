@@ -1,25 +1,24 @@
 /** @format */
+
 import React, { useState } from 'react';
-import Field from './components/Field';
-import Footer from './components/Footer/Footer';
-import Header from './components/header/Header';
-import Speakers from './components/Speakers';
-import { data } from './data';
-import routes from './routes';
+/** @format */
+import { Route, Routes } from 'react-router-dom';
+import About from './components/About';
+import Home from './components/Home';
+import Message from './components/Message';
+import SpeakerDetail from './components/SpeakerDetail';
+
+// import your route components too
 function App() {
   return (
-    <routes />
-    // const [term, setTerm] = useState('');
-    // return (
-    //   <div className='ui'>
-    //     <Header />
-    //     <div className='ui container'>
-    //       <Field value={term} onChange={setTerm} />
-    //       <Speakers term={term} data={data} />
-    //     </div>
-    //     <div class='ui divider'></div>
-    //     <Footer />
-    //   </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='speaker' element={<SpeakerDetail />}>
+        <Route path=':idSpeaker' element={<SpeakerDetail />} />
+      </Route>
+      <Route path='message' element={<Message />} />
+      <Route path='about' element={<About />} />
+    </Routes>
   );
 }
 

@@ -6,11 +6,10 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { default as AppRoutes, default as routes } from './routes';
 
 ReactDOM.render(
   <BrowserRouter>
-    <AppRoutes />
+    <App />
   </BrowserRouter>,
   document.getElementById('root')
 );
