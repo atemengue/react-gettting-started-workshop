@@ -10,12 +10,12 @@ import SpeakerDetail from '../components/SpeakerDetail';
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />}>
-        <Route path='about' element={<About />}>
-          <Route path=':idSpeaker' element={<SpeakerDetail />} />
-          <Route path='message' element={<Message />} />
-        </Route>
+      <Route path='/' element={<Home />} />
+      <Route path='speaker' element={<SpeakerDetail />}>
+        <Route path=':idSpeaker' element={<SpeakerDetail />} />
       </Route>
+      <Route path='message' element={<Message />} />
+      <Route path='about' element={<About />} />
     </Routes>
   );
 };

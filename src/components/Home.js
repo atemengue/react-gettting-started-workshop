@@ -11,14 +11,9 @@ const Home = () => {
   const [term, setTerm] = useState('');
 
   return (
-    <div className='ui'>
-      <Header />
-      <div className='ui container'>
-        <Field value={term} onChange={setTerm} />
-        <Speakers term={term} data={data} />
-      </div>
-      <div class='ui divider'></div>
-      <Footer />
+    <div className='ui container'>
+      <Field value={term} onChange={setTerm} />
+      <Speakers term={term} data={data} />
     </div>
   );
 };
