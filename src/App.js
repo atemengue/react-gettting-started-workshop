@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+/** @format */
+import React, { useState } from 'react';
+import Field from './components/Field';
+import Footer from './components/Footer/Footer';
+import Header from './components/header/Header';
+import Speakers from './components/Speakers';
+import { data } from './data';
 
 function App() {
+  const [term, setTerm] = useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='ui'>
+      <Header />
+      <div className='ui container'>
+        <Field value={term} onChange={setTerm} />
+        <Speakers term={term} data={data} />
+      </div>
+      <div class='ui divider'></div>
+      <Footer />
     </div>
   );
 }
