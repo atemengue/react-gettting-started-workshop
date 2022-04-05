@@ -1,6 +1,7 @@
 /** @format */
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Speaker = ({
   first,
@@ -12,7 +13,7 @@ const Speaker = ({
   sessions,
 }) => {
   return (
-    <div className='ui card'>
+    <Link to={`/speaker/${id}`} className='ui card'>
       <div className='image'>
         <img alt='' src={`images/speaker-${id}.png`} />
       </div>
@@ -22,22 +23,18 @@ const Speaker = ({
         </a>
 
         <div className='description'>{bio}</div>
+        <div className='ui divider'></div>
         <div className='meta'>
-          <div class='ui grid'>
-            <div class='wide column'>
-              <span>
-                <i className='home icon'></i>
-                {company}
-              </span>
-            </div>
-            <div class='wide column'>
-              <span>
-                <i className='home icon'></i>
-                {company}
-              </span>
-            </div>
-          </div>
+          <span>
+            <i className='user icon'></i>@{twitterHandle}
+          </span>
         </div>
+
+        <div className='ui divider'></div>
+        <span>
+          <i className='home icon'></i>
+          {company}
+        </span>
       </div>
       <div className='extra content'>
         <a href='#'>
@@ -45,7 +42,7 @@ const Speaker = ({
           {sessions.length}
         </a>
       </div>
-    </div>
+    </Link>
   );
 };
 

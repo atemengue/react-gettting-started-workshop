@@ -13,6 +13,7 @@ const Home = () => {
   return (
     <div className='ui container'>
       <Field value={term} onChange={setTerm} />
+      <div className='ui divider hidden'></div>
       <Speakers term={term} data={data} />
     </div>
   );
