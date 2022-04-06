@@ -1,7 +1,8 @@
 /** @format */
 
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ConfigContext } from '../App';
 import ImageSpeaker from './ImageSpeaker';
 
 const Speaker = ({
@@ -13,6 +14,8 @@ const Speaker = ({
   twitterHandle,
   sessions,
 }) => {
+  const context = useContext(ConfigContext);
+
   return (
     <Link to={`/speaker/${id}`} className='ui card'>
       <ImageSpeaker
@@ -44,6 +47,9 @@ const Speaker = ({
           {sessions.length}
         </a>
       </div>
+      {context.showSpeakerSpeakingDays && (
+        <div className='extra content'>Speaking data Ici</div>
+      )}
     </Link>
   );
 };
