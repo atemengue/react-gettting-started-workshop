@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ImageSpeaker from './ImageSpeaker';
 
 const Speaker = ({
   first,
@@ -14,9 +15,10 @@ const Speaker = ({
 }) => {
   return (
     <Link to={`/speaker/${id}`} className='ui card'>
-      <div className='image'>
-        <img alt='' src={`images/speaker-${id}.png`} />
-      </div>
+      <ImageSpeaker
+        secondaryImage={`images/bw/bw.png`}
+        primaryImage={`images/speaker-${id}.png`}
+      />
       <div className='content'>
         <a href='#' className='header'>
           {first} - {last}
