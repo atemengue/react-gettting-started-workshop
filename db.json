@@ -8,6 +8,8 @@
       "bio": "CEO Combi-driver software consultant and UX designer",
       "twitterHandle": "miguel_foyou",
       "favorite": true,
+      "sat": true,
+      "sum": false,
       "sessions": [
         {
           "id": "32",
@@ -37,6 +39,8 @@
       "bio": "Consultant, Fondateur de Mpondo Entreprise, Réseaux et Cloud",
       "twitterHandle": "arnol_mpondo",
       "favorite": false,
+      "sat": false,
+      "sum": false,
       "sessions": [
         {
           "id": "1011",
@@ -60,6 +64,8 @@
       "bio": "Expert en relations internationales et études stratégiques",
       "twitterHandle": "boris_manang",
       "favorite": true,
+      "sat": true,
+      "sum": true,
       "sessions": [
         {
           "id": "676",
@@ -89,6 +95,8 @@
       "bio": "Hacking Éthique | Pentesting | Audit Informatique | Cybersécurité",
       "twitterHandle": "david_perghaud",
       "favorite": true,
+      "sat": false,
+      "sum": false,
       "sessions": [
         {
           "id": "12",
@@ -118,6 +126,8 @@
       "company": "Kelley Blue Book",
       "twitterHandle": "hermine_audrey",
       "favorite": false,
+      "sat": false,
+      "sun": true,
       "sessions": [
         {
           "id": "1252",
@@ -147,6 +157,8 @@
       "bio": "Network Administrator | Network SECURITY | Instructor Cisco CCNA R&S, CCNA security",
       "twitterHandle": "jose_balla",
       "favorite": true,
+      "sat": true,
+      "sum": true,
       "sessions": [
         {
           "id": "7548",
@@ -164,6 +176,8 @@
       "bio": "LoRa technology enthusiast (LPWAN), NetWork Expert, Software Developer",
       "twitterHandle": "junior_antoine",
       "favorite": false,
+      "sun": false,
+      "sat": true,
       "sessions": [
         {
           "id": "4820",
@@ -187,6 +201,8 @@
       "bio": "Analyste, Full Stack Développeur, Agripreneur, Freestyleur .",
       "twitterHandle": "regis_ate",
       "favorite": true,
+      "sat": true,
+      "sum": false,
       "sessions": [
         {
           "id": "7549",
@@ -204,6 +220,8 @@
       "bio": "Cisco Trainer, Junior network and security Support | CCNP Enterprise | CCNA Security | Cyberops Associate",
       "twitterHandle": "lionel_gweth",
       "favorite": false,
+      "sat": true,
+      "sum": false,
       "sessions": [
         {
           "id": "944",
@@ -227,6 +245,8 @@
       "bio": "Ron teaches Object Oriented Analysis and Design at De Anza College ",
       "twitterHandle": "steve_nouyep",
       "favorite": false,
+      "sat": false,
+      "sum": false,
       "sessions": [
         {
           "id": "86",
@@ -256,6 +276,8 @@
       "bio": "Ron enseigne l'analyse et la conception orientées objet au College",
       "twitterHandle": "liliane_bekono",
       "favorite": false,
+      "sat": false,
+      "sum": false,
       "sessions": [
         {
           "id": "86",
@@ -279,6 +301,8 @@
       "bio": " Gagnez en visibilité, notoriété et crédibilité 📌 Social Media Marketing / Copywriting / Stratégies Digitales / Créateur de contenu",
       "twitterHandle": "magazor",
       "favorite": false,
+      "sat": true,
+      "sum": true,
       "sessions": [
         {
           "id": "86",
@@ -291,6 +315,26 @@
           "title": "La route du digital Entrepreneur",
           "eventYear": "2021",
           "room": { "name": "CazyLabs", "capacity": 130 }
+        }
+      ]
+    },
+    {
+      "id": "9394",
+      "first": "Batende",
+      "last": "James",
+      "company": "LIS-SARL",
+      "bio": "Responsable IT LIS-SARL | Anguler Expert | Java Expert | Management, Logistique, Transport",
+      "twitterHandle": "james_bat",
+      "favorite": false,
+      "sessions": [
+        {
+          "id": "944",
+          "title": "Comprendre les algorithmes",
+          "eventYear": "2018",
+          "room": {
+            "name": "Crazylabs",
+            "capacity": 30
+          }
         }
       ]
     }
