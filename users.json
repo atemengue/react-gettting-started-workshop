@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Caysti Speaker",
+      "email": "twf@email.com",
+      "password": "twf1234"
+    },
+    {
+      "id": 2,
+      "email": "admin@email.com",
+      "name": "admin",
+      "password": "admin"
+    }
+  ]
+}
